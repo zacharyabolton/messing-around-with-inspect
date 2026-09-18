@@ -1,0 +1,85 @@
+{
+  "description": "Selected completed learning runs; original logs remain local.",
+  "runs": [
+    {
+      "file": "2026-09-18-language-id.eval",
+      "sha256": "9d574a7e514a25b2d7d700d5371864546a5fd264f4bf6fdfed73b74d0581d125",
+      "bytes": 270246,
+      "original_file": "2026-09-18T02-39-14-00-00_wronglang_eL24eArQSSh7JrgxmVYYmE.eval",
+      "original_sha256": "9d574a7e514a25b2d7d700d5371864546a5fd264f4bf6fdfed73b74d0581d125",
+      "started_at": "2026-09-18T02:39:14+00:00",
+      "completed_at": "2026-09-18T02:39:50+00:00",
+      "model": "openai/gpt-5",
+      "inspect_ai_version": "0.3.265",
+      "samples": 20,
+      "correct": 20,
+      "redaction": {
+        "changed_archive_entries": [],
+        "description": "None; byte-for-byte copy."
+      },
+      "source": {
+        "description": "wronglang.py, subsequently renamed to language_id.py with the task function renamed; evaluation logic unchanged.",
+        "reconstructed_original_source_sha256": "3293d0f039c7173202cb045ae4b80591e7cf53b6a610ebca8252029dfc8e4405"
+      }
+    },
+    {
+      "file": "2026-09-18-intercode-ctf.eval",
+      "sha256": "38e4dcfa1e65dc61c207bce25039174c5c26dd9cfa90b052f6abbf83a5e920b0",
+      "bytes": 3164596,
+      "original_file": "2026-09-18T14-35-33-00-00_gdm-intercode-ctf_4XWjW8VfWVhK5ZzhpUtGMp.eval",
+      "original_sha256": "9cd777aea13039fa571e8312d3f9cec5beae071e3334adaf03ae4d9165d09fba",
+      "started_at": "2026-09-18T14:35:33+00:00",
+      "completed_at": "2026-09-18T15:03:46+00:00",
+      "model": "openai/gpt-5-nano",
+      "inspect_ai_version": "0.3.265",
+      "samples": 78,
+      "correct": 66,
+      "redaction": {
+        "changed_archive_entries": [
+          "_journal/start.json",
+          "header.json"
+        ],
+        "description": "Local home-directory prefix replaced with /Users/REDACTED/ in dataset location metadata only."
+      },
+      "source": {
+        "description": "Local copy of Inspect Evals, archived after the run; upstream source commit not recorded.",
+        "task_version": "4-B",
+        "repository_revision_recorded_in_log": {
+          "type": "git",
+          "origin": "",
+          "commit": "6c29cf3",
+          "dirty": true
+        },
+        "dataset_revision": "c3e46d827cfc9d4c704ec078f7abf9f41e3191d8",
+        "archived_source_sha256": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "_registry.py": "2adb1de729c3312c345397d6caed24df797a2d1f0af112ac6116c7b08bdaeffb",
+          "constants.py": "a01ecd36fee5cab2218903da2553966200ff67729bd64228c5fefc834a20cae9",
+          "gdm_intercode_ctf/Dockerfile": "56c2848528b3db31b445f9ad7656985abc88af03d3650519c1d397679d833384",
+          "gdm_intercode_ctf/Dockerfile.template": "6fe0e4e5fd8dd5f35bfe767b03bd4235dae9081e695b306387b5ba238bb8ba82",
+          "gdm_intercode_ctf/__init__.py": "c2e7fdaf477d26b9043e27d2cd8c93b5513ec8278cc437e86d8d09c0d7488d51",
+          "gdm_intercode_ctf/compose.yaml": "c7039f779a7c0ac6065deb7b241c80a974f36bef44efa8db87e9a12032937257",
+          "gdm_intercode_ctf/dataset.py": "64adcbec6f5d247b874dbba487d2c98d5c0131007845c30533fec7e49e3b1cfd",
+          "gdm_intercode_ctf/eval.yaml": "93745230025b12bf9008482fc37c708aab4beae0327be7fc3972560c28baa018",
+          "gdm_intercode_ctf/gdm_intercode_ctf.py": "44b3df0b4067b8254d254acfe74abfd927a493e16e66e791d87a2545217445c0",
+          "hf_dataset_script_helper.py": "45cb501cc36f26ecf61bfe1536c1e298e8b49235a646cffd31e973e2b611fa48",
+          "metadata.py": "177b909e1fbf219f6d61a35757204e270933bad8c22fffb7311122863f241b4b",
+          "py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utils/__init__.py": "d468568b23d47f8b721185581cba6d620d8ee15cf757f72b6b09956e89aaa799",
+          "utils/aime_common.py": "32f94dff9e0b47da2b143d780597208635d411dec866d171ebc4ed8ed01d43ee",
+          "utils/code.py": "b1e2b7546cbb8d2cbcb6471919a1e99ae82f9e0f122d6c3dcbbb2e3059a7bded",
+          "utils/deps_utils.py": "396fd0d66ae23990f1cd6d8b63646984dfdaa05a84e20f2591a9f8bc3da2b740",
+          "utils/docker_utils.py": "010f85775eb72f1f7145128bb85abe5c9f841863a6fdd3021da3939ebe0c815a",
+          "utils/hf_telemetry.py": "1f8f8785f9f8b0ff569f231acd2619562f54cdd78acb9dcc67b48790f44ef95d",
+          "utils/huggingface.py": "a11f4a328e81e90e2371872b24e8b4081c7f457398c21cdd2ea02fb13380ec6a",
+          "utils/load_dataset.py": "02355ee07b276c83907ff6ec1c38c9821e0deeeaab209dfcccb472b1323d93fe",
+          "utils/messages.py": "edbf4a494ab1651c1d0e85599d8fe88004ca6bcb6566171b565adbbf676f2818",
+          "utils/noautolint.txt": "30f83d6582ccf9d7236aa626cfb6442484c744c822d9a844aa992ec7ced02a69",
+          "utils/prompts.py": "eb42db2455d64086c18d213ab46fc31a0a2f0cb8395b03618a95284abcb0d861",
+          "utils/sandbox_check.py": "16e22fa91ed12d21ae3d7e8c39c3095dd89fa2bcf71f67d5727b99cc86f7bb1c",
+          "utils/scorers.py": "04f5b0c04c25a33cca95afe5ada56a0e6feea4bc0d2047b9e62f3d06bd045937"
+        }
+      }
+    }
+  ]
+}

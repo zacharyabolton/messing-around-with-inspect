@@ -11,7 +11,7 @@ langs = [
 ]
 
 @task
-def wronglang():
+def language_id():
     labels = ", ".join(lang[0] for lang in langs)
     return Task(
         dataset=MemoryDataset(

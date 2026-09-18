@@ -1,12 +1,9 @@
-# Local Python environment and bytecode
 .venv/
 __pycache__/
 *.py[cod]
 
-# Inspect AI evaluation artifacts
 logs/
 
-# Secrets and machine files
 .env
 .env.*
 !.env.example
