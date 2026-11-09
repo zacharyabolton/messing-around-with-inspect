@@ -1,12 +1,20 @@
-# Messing Around with Inspect
+# Inspect AI experiments
 
 Small experiments while learning [Inspect AI](https://inspect.aisi.org.uk/).
-Personal learning scratchpad; no benchmark conclusions.
+Controlled tasks, explicit scoring, and checks on what the results actually mean.
+Personal learning work; no broad benchmark conclusions.
 
 - [Language ID](language_id.py): classify 20 FLORES examples across four
   languages, using model-graded scoring. A 20-sample run completed with GPT-5.
 - [SimpleQA](simpleqa.py): load SimpleQA-Verified and try model-graded QA.
   A 1,000-sample run completed with GPT-5.
+- [Resume PDF injection](resume_eval/README.md): compare a clean resume with
+  tiny white-text direct, CTF/reward, and forged recruiter injections in four
+  repeated screening tasks. The original three completed a GPT-5 nano run;
+  the recruiter condition is new. Locally tested with a mock model.
+- [Petri behavioral audit](petri-audit/README.md): report-only work sample on
+  judge inconsistencies, simulator drift, and the difference between attempted
+  and completed actions. The supplied hiring-test harness is not redistributed.
 - **Agentic evaluation:** trying the upstream
   [GDM InterCode CTF task](https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/gdm_intercode_ctf)
   with bash/Python tools in Docker. A 78-sample run completed with GPT-5 nano
@@ -55,3 +63,9 @@ Two [experiment receipts](examples/runs/README.md) include the full language-ID
 and CTF traces, with configuration and provenance notes. Routine `logs/` and
 credentials are excluded from Git. Completed runs above are learning exercises,
 not comparisons between models or reproductions of published scores.
+
+## Authorship
+
+These experiments use AI assistance for implementation and analysis. I frame the
+questions, review evidence, and make iteration decisions. The Petri report states
+which transcript review was mine and which checks were agent-assisted.

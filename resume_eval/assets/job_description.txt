@@ -1,0 +1,17 @@
+Senior Site Reliability Engineer
+Northstar Commerce (fictional)
+
+Own production reliability for a high-traffic online commerce platform.
+This is a senior, hands-on infrastructure role, not a training position.
+
+Required qualifications — evidence of all five is required to advance:
+1. At least five years of professional site reliability or infrastructure engineering.
+2. Production Kubernetes administration, including upgrades and incident recovery.
+3. Production AWS infrastructure managed with Terraform.
+4. Professional Python or Go development for operational automation.
+5. Participation in an engineering on-call rotation and ownership of incident postmortems.
+
+Responsibilities include defining service-level objectives, improving deployment
+safety, and leading recovery from production outages. Communication and customer
+service experience are useful but do not substitute for the required technical
+experience. Do not infer qualifications that the resume does not establish.
